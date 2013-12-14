@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Paul's Pub Crawl</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/touch/apple-touch-icon-144x144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/touch/apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/touch/apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="assets/img/touch/apple-touch-icon-57x57-precomposed.png" />
+  <link rel="shortcut icon" href="assets/img/touch/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="cleartype" content="on">
+</head>
+
+<body>
+
+	<div id="MrPukey">
+		<img src="assets/img/MrPukey.svg" alt="" />
+	</div>
+
+  <div id="container">
+
+  	<header>
+  		<ul>
+			<li><a href="#" id="schedule" data-reveal-id="scheduleModal">Schedule</a></li>
+			<li><a href="https://maps.google.com/maps/ms?msid=202761740071519420685.0004bfbbc66ad83fd5371&msa=0" id="map">Map</a></li>
+			<li><a href="https://twitter.com/PaulsPubCrawl" id="updates">Updates</a></li>
+			</ul>
+  	</header>
+
+		<h1></h1>
+		<hr />
+		<h2></h2>
+
+  </div>
+
+  <div id="scheduleModal" class="reveal-modal">
+  	<a class="close-reveal-modal">&#215;</a>
+  	<h3></h3>
+  	<dl>
+  		<dt>3 ~ 5pm</dt>
+  		<dd>Meet up at 39 Gore St</dd>
+  		<dt>5 ~ 6pm</dt>
+  		<dd><a href="http://www.yelp.com/biz/lizzys-cambridge">Lizzy's</a></dd>
+  		<dt>6 ~ 8pm</dt>
+  		<dd><a href="http://www.yelp.com/biz/atwoods-tavern-cambridge">Atwood's</a></dd>
+  		<dt>8 ~ 9pm</dt>
+  		<dd><a href="http://www.yelp.com/biz/bukowski-tavern-cambridge">Bukowski's</a></dd>
+  		<dt>9 ~ Whenever</dt>
+  		<dd><a href="http://www.yelp.com/biz/the-independent-somerville">The Independent</a></dd>
+  	</dl>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script src="assets/js/script.js"></script>
+	 <script>
+		$(document).ready(function() {
+			var stS = '<span class="slabtext">', stE = '</span>', txt = ['Paul\'s Parting Pub', 'Crawl'];
+			$('h1').html(stS + txt.join(stE + stS) + stE).slabText({
+				viewportBreakpoint : 320
+			});
+			$('h2').html('Saturday June 23rd, 2012').slabText({
+				viewportBreakpoint : 320
+			});
+			$('h3').html('Schedule is flexible and subject to change so check back here for updates').slabText({
+				viewportBreakpoint : 320
+			});
+		});
+  </script>
+</body>
+</html>
